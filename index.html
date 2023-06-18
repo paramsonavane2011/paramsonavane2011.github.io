@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying Dates and Times</title>
+</head>
+<body>
+    <h1>Current Date and Time</h1>
+    <script>
+        now = new Date();
+        localTime = now.toString();
+        utcTime = now.toGMTString();
+        document.write("<strong>Local Time: </strong>" + localTime + "<br/>" + "<br/>");
+        document.write("<strong>UTC Time: </strong>" + utcTime);
+        hours = now.getHours();
+        minutes = now.getMinutes();
+        seconds = now.getSeconds();
+        document.write("<h1>");
+        document.write(hours + ":" + minutes + ":" + seconds);
+        document.write("</h1>");
+    </script>
+</body>
+</html>
